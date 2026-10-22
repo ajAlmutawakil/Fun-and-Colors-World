@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎈 Kids Fun World 🎨</title>
+    <!-- Google Fonts for Kids -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Background Decorations -->
+    <div class="bg-decorations">
+        <div class="cloud cloud-1">☁️</div>
+        <div class="cloud cloud-2">☁️</div>
+        <div class="star star-1">⭐</div>
+        <div class="star star-2">✨</div>
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <h1 class="bounce-title">✨ Fun & Color World 🦄</h1>
+        <p class="subtitle">Welcome Little Champ! Explore, draw, and play in our magical world! 🎉</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <a href="#animals" class="nav-btn btn-yellow">🦁 Animals</a>
+        <a href="#drawing" class="nav-btn btn-pink">🎨 Magic Canvas</a>
+        <a href="#game" class="nav-btn btn-blue">🧩 Memory Game</a>
+    </nav>
+
+    <!-- Animal Friends Section -->
+    <section id="animals" class="section-container">
+        <h2 class="section-title">🦁 Meet Our Friends 🐘</h2>
+        <div class="cards-grid">
+            
+            <div class="card card-pink" onclick="speakText('The brave Lion, king of the jungle! Roar!')">
+                <div class="card-icon">🦁</div>
+                <h3>Brave Lion</h3>
+                <p>He is the King of the Jungle with a mighty roar! 👑</p>
+                <button class="action-btn">Click to Hear! 🔊</button>
+            </div>
+
+            <div class="card card-blue" onclick="speakText('The friendly Elephant with a long trunk!')">
+                <div class="card-icon">🐘</div>
+                <h3>Kind Elephant</h3>
+                <p>Loves water and has a long trunk with big ears! 💦</p>
+                <button class="action-btn">Click to Hear! 🔊</button>
+            </div>
+
+            <div class="card card-green" onclick="speakText('The playful Monkey loves bananas and swinging!')">
+                <div class="card-icon">🐒</div>
+                <h3>Playful Monkey</h3>
+                <p>Loves eating sweet bananas and jumping on trees! 🍌</p>
+                <button class="action-btn">Click to Hear! 🔊</button>
+            </div>
+
+            <div class="card card-purple" onclick="speakText('The speedy Rabbit loves eating yummy carrots!')">
+                <div class="card-icon">🐰</div>
+                <h3>Hopping Rabbit</h3>
+                <p>Loves crunchy orange carrots and hops super fast! 🥕</p>
+                <button class="action-btn">Click to Hear! 🔊</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Drawing Canvas Section -->
+    <section id="drawing" class="section-container">
+        <h2 class="section-title">🎨 Magic Drawing Board ✨</h2>
+        <div class="canvas-wrapper">
+            <div class="drawing-tools">
+                <label>Pick Color:</label>
+                <input type="color" id="colorPicker" value="#FF5722">
+                
+                <label>Brush Size:</label>
+                <input type="range" id="brushSize" min="2" max="30" value="8">
+
+                <button id="clearBtn" class="tool-btn btn-red">🗑️ Clear Canvas</button>
+            </div>
+            <canvas id="paintCanvas" width="600" height="350"></canvas>
+        </div>
+    </section>
+
+    <!-- Memory Game Section -->
+    <section id="game" class="section-container">
+        <h2 class="section-title">🧩 Emoji Match Game 🎮</h2>
+        <p class="game-info">Find all matching pairs of emojis!</p>
+        <div class="memory-board" id="memoryBoard"></div>
+        <button id="restartGameBtn" class="action-btn btn-green">🔄 Restart Game</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>Designed with love for creative kids 💖 ✨ 2026</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
